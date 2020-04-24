@@ -1,4 +1,4 @@
-# rpc : call a remote service just like local method.
+# rpc : call a remote service just like a local method.
 This is a simple rpc project base on netty that can build and run locally.
 
 Sever run: RpcServer.java
@@ -16,6 +16,6 @@ response the result by ChannelHandlerContext.writeAndFlush  of netty.
 The customer will get the decoded response data in ResponseHandler which extends ChannelInboundHandlerAdapter.
 Return the result in RemoteServiceProxy.
 
- **Add any new services ** in the package 'cn.jamie.learning.rpc.nettyserver.service'.
+## Add any new services ## in the package 'cn.jamie.learning.rpc.nettyserver.service'.
  Tag the @RpcService on the implementation class.
  Copy the new added interface to the package 'cn.jamie.learning.rpc.nettyclient.service', then it could be called in the client.
