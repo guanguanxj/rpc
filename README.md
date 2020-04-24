@@ -16,6 +16,7 @@ response the result by ChannelHandlerContext.writeAndFlush  of netty.
 The customer will get the decoded response data in ResponseHandler which extends ChannelInboundHandlerAdapter.
 Return the result in RemoteServiceProxy.
 
-## Add any new services ## in the package 'cn.jamie.learning.rpc.nettyserver.service'.
- Tag the @RpcService on the implementation class.
- Copy the new added interface to the package 'cn.jamie.learning.rpc.nettyclient.service', then it could be called in the client.
+### Add one new service 
+ To add the interface and its implementation in the package 'cn.jamie.learning.rpc.nettyserver.service'.
+ To tag the @RpcService on the implementation.
+ To copy the new added interface to the package 'cn.jamie.learning.rpc.nettyclient.service', then it could be called in the client.
